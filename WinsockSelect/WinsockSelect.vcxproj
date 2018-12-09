@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{242A3CED-5D53-42C1-8279-49707B7A7F5A}</ProjectGuid>
-    <RootNamespace>WinsockServer</RootNamespace>
+    <ProjectGuid>{A7F5060E-93C4-4CAD-BF8D-4861006519E5}</ProjectGuid>
+    <RootNamespace>WinsockSelect</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -77,9 +77,6 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
-    <Link>
-      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -118,31 +115,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Channels.cpp" />
-    <ClCompile Include="ChatRoom.cpp" />
-    <ClCompile Include="Chatter.cpp" />
-    <ClCompile Include="CommandHandler.cpp" />
-    <ClCompile Include="Commands.cpp" />
-    <ClCompile Include="Quotd.cpp" />
-    <ClCompile Include="ServerDriver.cpp" />
-    <ClCompile Include="Server.cpp" />
-    <ClCompile Include="Thread.cpp" />
+    <ClCompile Include="SelectDriver.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Channels.h" />
-    <ClInclude Include="ChatRoom.h" />
-    <ClInclude Include="Chatter.h" />
-    <ClInclude Include="ChatterDB.h" />
-    <ClInclude Include="CommandHandler.h" />
-    <ClInclude Include="Commands.h" />
-    <ClInclude Include="channels.txt" />
-    <ClInclude Include="Quotd.h" />
-    <ClInclude Include="Server.h" />
-    <ClInclude Include="Thread.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="commands.txt" />
-    <Text Include="quotes.txt" />
+    <ClInclude Include="Select.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
